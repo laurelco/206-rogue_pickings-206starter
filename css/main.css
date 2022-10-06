@@ -198,19 +198,21 @@ footer span {
 
 /*  Media Queries  */
 
-@media all and (min-width:768px) {
+@media (min-width: 768px) {
     /* Tablet styles here */
 	.bottom-section {
 
 		border-top: 3px solid #eee;
+		flex-flow: row wrap;
 		justify-content: space-between;
         align-items: flex-start;
+		
 	}
 
 	.section-one .section-three{
 		flex-basis: 33%;
 		
-	
+
 
 	}
 
@@ -219,12 +221,13 @@ footer span {
 		border-left: 3px solid #eee;
 		flex-basis: 33%;
 		
+		
 	}
  
 
 }
  
-@media all and (min-width:1200px) {
+@media (min-width:1200px) {
     /* Desktop styles here */
  
 }
