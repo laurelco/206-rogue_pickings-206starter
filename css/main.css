@@ -1,6 +1,5 @@
 html {
 	font-size: 16px;
-	max-width: 1200px;
 }
 
 body {
@@ -210,25 +209,51 @@ footer span {
 		
 	}
 
-	.section-one .section-three{
+	.section-one,
+	 .section-three {
 		flex-basis: 33%;
-		
-
 
 	}
 
 	.section-two {
-		border-right: 3px solid #eee;
-		border-left: 3px solid #eee;
+		border-right: 1px solid #eee;
+		border-left: 1px solid #eee;
 		flex-basis: 33%;
+		box-sizing: border-box;
+		padding-left: 20px;
+		padding-right: 20px;
 		
 		
 	}
  
 
 }
- 
+
+ /* Desktop */
 @media (min-width:1200px) {
     /* Desktop styles here */
  
+	header {
+		justify-content: space-between;
+	}
+
+	header h1 {
+		width: 30%;
+		padding: 0;
+		border-bottom: none;
+		text-align: left;
+	  }
+
+	  header nav {
+		width: 40%;
+		
+	  }
+
+	  header nav ul {
+		display: flex;
+		justify-content: space-between;
+
+
+	  }
+
 }
